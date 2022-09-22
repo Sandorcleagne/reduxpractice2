@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const formReducers = createSlice({
   name: "usersData",
   initialState: {
-    value: "",
+    value: [],
   },
   reducers: {
     storingData: (state, data) => {
-      state.value = data; // if this will not work try state.data
+      state.value = data.payload; // if this will not work try state.value
     },
   },
 });
